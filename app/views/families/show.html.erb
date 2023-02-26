@@ -1,0 +1,28 @@
+<% content_for :active_menu_item do %>
+	<%= @family.friendly_url %>
+<% end %>
+
+<div id="serie-header">
+	<div id="text">
+		<h1>Archos <%= @family.name %></h1>
+		<p><%= @family.description %></p>
+	</div>
+	<%= image_tag @family.image %>
+</div>
+
+<div id="sections">
+
+	<% @family.devices.each do |device| %>
+		<div class="section">
+			<h2><%= device.name %></h2>
+			<p>
+				<%= device.single_line_description %>
+			</p>
+			<a href="device.html" title="Selectie van de features van een Archos tablet">
+			<%= image_tag device.small_image %>
+			</a>
+		</div>
+	<% end %>
+	
+	
+</div>

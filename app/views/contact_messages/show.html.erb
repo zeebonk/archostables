@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @contact_message.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @contact_message.email %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%=h @contact_message.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_message_path(@contact_message) %> |
+<%= link_to 'Back', contact_messages_path %>

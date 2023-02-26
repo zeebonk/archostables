@@ -1,0 +1,44 @@
+<% content_for :active_menu_item do %>
+	homepage
+<% end %>
+
+<div id="teaser">
+	<div id="text">
+		<h1>Productief, sociaal en vermaak.</h1>
+		<p>Een ongeevenaarde ervaring. Altijd sociaal met Skype, MSN, Facebook en Twitter. Productief onderweg met email, QuickOffice en de gesynchoniseerde agenda. Ontspan met een oneindige hoeveelheid films, muziek en boeken.</p>
+	</div>
+	<%= image_tag("teaser.jpg") %>
+</div>
+
+<div id="sections">
+
+	<div class="section">
+		<h2>Waarom een Archos</h2>
+		<p>Laat u overtuigen door de Archos tablet ervaring.</p>
+		<%= link_to image_tag("why-archos-section.jpg"), :action => 'features' %>
+	</div>
+	
+	<div class="section">
+		<h2>Home Tablets</h2>
+		<p>Tablets voor al uw multimedia en entertainment behoeftes.</p>
+		<a href="serie.html" title="Alle modellen uit de Home Tablet serie">
+			<%= image_tag("home-tablet-section.jpg") %>
+		</a>
+	</div>
+	
+	<div class="section">
+		<h2>Internet Tablets</h2>
+		<p>
+			Hoge prestaties en internet waar en wanneer u maar wilt.
+		</p>
+		<a href="#" title="Alle modellen uit de Internet Tablet serie">
+			<%= image_tag("internet-tablet-section.jpg") %>
+		</a>
+	</div>
+	
+	<div class="section">
+		<h2>Demonstratie video</h2>
+		<p>Bekijk hoe het werken met een Archos tablet verloopt.</p>
+		<%= link_to image_tag("video-section.jpg"), :action => 'demonstratie_video' %>
+	</div>
+</div>

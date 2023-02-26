@@ -1,0 +1,379 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(../images/background.gif) repeat-x top #f7f7f7;
+	font-family:  Helvetica, Arial, Tahoma, sans-serif;
+}
+
+p
+{
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+	padding:0;
+}
+
+h1
+{
+	font-size: 18px;
+	font-weight: bolder;
+	display: inline;
+	line-height: 30px;
+}
+
+#wrapper
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#notices
+{
+	text-align: center;
+	font-size: 15px;
+	clear: both;
+	margin-top: 40px;
+	margin-bottom: -40px;
+}
+
+.fieldWithErrors
+{
+	display: inline;
+}
+
+#notices p
+{
+	
+	display: block;
+}
+
+#header ul
+{
+	width: 780px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	padding-top: 16px;
+	text-align: right;
+}
+
+#header { margin-bottom: 10px; }
+
+#header ul li
+{
+	display: inline;
+	margin-left: 30px;
+}
+
+#header ul li a
+{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+#header ul li a:hover, #header ul li a.active
+{
+	color:#ff6666;
+}
+
+#teaser
+{
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
+#serie-header
+{
+	margin-top: 60px;
+	margin-bottom:60px;
+	margin-left: 50px;
+}
+
+#teaser #text, #serie-header #text
+{
+	float:left;
+	text-align: center;
+}
+
+#text h1
+{
+	display: block;
+	width: 350px;
+	margin:0;
+	padding:0;
+	padding-top: 30px;
+}
+
+#text p
+{
+	font-size: 18px;
+	line-height: 30px;
+	display: block;
+	width: 350px;
+	margin-right: 70px;
+}
+
+.feature 
+{  
+	padding-top:30px; 
+	border-bottom: 1px solid #dfdfdf;
+	clear: both;
+	overflow: hidden;
+}
+
+.feature img
+{
+	float: right;
+}
+
+.right img
+{
+	float: left;
+}
+
+.feature .text
+{
+	width: 350px;
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 70px;
+	padding-top: 40px;
+}
+
+.right .text
+{
+	float: right;
+}
+
+.text p
+{
+	display: block;
+	width: 350px;
+}
+
+.right p 
+{
+	float: right;
+}
+
+#sections
+{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.section
+{
+	width: 180px;
+	height: 249px;
+	background: url(../images/section-background.gif);
+	float:left;
+	padding: 30px;
+	text-align: center;
+}
+
+.section h2
+{
+	margin:0;
+	padding:0;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.section p
+{
+	font-size: 13px;
+	color: #514a4a;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#contact-form 
+{
+	padding-top: 80px;
+	float: right;
+}
+
+#contact-form ul
+{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#contact-form ul li
+{
+	padding-bottom: 15px;
+}
+
+#contact-form label
+{
+	display: block;
+	width: 100px;
+	font-size: 14px;
+	float: left;
+	padding-top:3px;
+}
+
+#contact-form .text-box {	width: 300px; }
+
+#contact-form .submit-button {	margin-left: 100px; }
+
+#contact-form textarea
+{
+	width: 400px;
+	height: 200px;
+}
+
+#contact-form-description
+{
+	padding-top: 120px;
+	width: 360px;
+	float: left;
+	text-align: center;
+}
+
+#video
+{
+	float :right;
+	margin-top: 75px;
+	border-radius: 3px;
+}
+
+#device-details
+{
+	margin-top: 35px;
+	padding-bottom: 25px;
+}
+
+#device-details h1
+{
+	display: block;
+	text-align: center;
+	margin: 35px 0px;
+	font-size: 25px;
+}
+
+#device-details #image-wrapper
+{
+	text-align: center;
+}
+
+#device-details ul
+{
+	list-style:none;
+	margin:0;
+	text-align: center;
+	padding:0;
+	margin-bottom: 70px;
+
+}
+
+#device-details ul li
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	display: inline;
+}
+
+#device-details ul li a
+{
+	background: #aaaaaa;
+	border-radius: 6px;
+	padding: 4px 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+#device-details ul li a.active, #device-details ul li a:hover
+{
+	background: #a10000;
+}
+
+#device-details #description p
+{
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+#device-details #specifications
+{
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+#device-details #specifications .group
+{
+	width: 45%;
+	margin-bottom: 40px;
+	overflow: visible;
+	float: left;
+	margin-left: 35px;
+}
+
+#device-details #specifications .right-column
+{
+float: right;
+}
+
+#device-details #specifications dl
+{
+	padding-left: 15px;
+}
+
+
+#device-details #specifications strong
+{
+	color: #a10000;
+}
+
+#device-details #specifications dl dt
+{
+	clear: left;
+	float: left;
+	width: 40%;
+	font-weight: bold;
+	padding:5px;
+	margin:0;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#device-details #specifications dl dd
+{
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 5px;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#device-details #prices
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#device-details #prices tr
+{
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#device-details #prices th
+{
+	color: #a10000;
+	text-align: left;
+}
+
+#device-details #prices th, #device-details #prices td
+{
+	padding: 5px;
+}

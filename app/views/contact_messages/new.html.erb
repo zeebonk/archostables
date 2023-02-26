@@ -1,0 +1,27 @@
+<% content_for :active_menu_item do %>
+	contact
+<% end %>
+
+<div id="contact-form-description">
+	<h1>Vragen en of opmerkingen.</h1>
+	<p>
+		Iets nog niet helemaal duidelijk is? Wilt u meer weten over de Archos tablets of wilt u iets kwijt? Laat het weten via het contact formulier hiernaast. Let er op dat u een geldig email adres invult als u een reactie terug zou willen!
+	</p>
+</div>
+
+<% form_for(@contact_message, :html => { :id => "contact-form" }) do |f| %>
+	<ul>
+		<li>
+			<%= f.label :name, "Naam" %>
+			<%= f.text_field :name, :class => 'text-box' %>
+		</li><li>
+			<%= f.label :email, "Email adres" %>
+			<%= f.text_field :email, :class => 'text-box' %>
+		</li><li>
+			<%= f.label :message, "Bericht" %>
+			<%= f.text_area :message %>
+		</li><li>
+			<%= f.submit 'Verstuur', :class => 'submit-button' %>
+		</li>
+	</ul>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  family_id: 1
+  storage: 1
+  screen: MyString
+  android_version: 9.99
+  url: MyString
+  image: MyString
+
+two:
+  name: MyString
+  family_id: 1
+  storage: 1
+  screen: MyString
+  android_version: 9.99
+  url: MyString
+  image: MyString

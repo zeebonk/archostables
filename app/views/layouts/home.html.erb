@@ -1,0 +1,37 @@
+<% @active_menu_item = yield :active_menu_item %>
+<% @active_menu_item.strip! if @active_menu_item != nil %>
+
+<!doctype html>
+
+<html lang="nl"> 
+  <head> 
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<%= stylesheet_link_tag 'main' %>
+		<title>Archos, Android tablets voor iedereen - Alle Archos Tablets.nl</title> 
+    
+  </head>
+  <body>
+		
+		<div id="wrapper">
+		
+			<div id="header">
+				<%= image_tag("logo.gif") %>
+				<ul>
+					<li><%= active_link_to "Homepage", {:controller => "home"}, @active_menu_item == "homepage" %></li>
+					<li><%= active_link_to "Features", {:controller => "home", :action => "features"}, @active_menu_item == "features" %></li>
+					<li><%= active_link_to "Home Tablets", {:controller => "families", :action => "show", :id => 2}, @active_menu_item == "home-tablets" %></li>
+					<li><%= active_link_to "Internet Tablets", {:controller => "families", :action => "show", :id => 1}, @active_menu_item == "internet-tablets" %></li>
+					<li><%= active_link_to "Contact", {:controller => "contact_messages", :action => "new"}, @active_menu_item == "contact" %></li>
+				</ul>
+			</div>
+
+			<div id="notices">
+				<p style="color: green"><%= flash[:notice] %></p>
+				<p style="color: red"><%= flash[:error] %></p>			
+			</div><br>
+		
+			<%= yield %>
+		
+  </body>
+</html>
